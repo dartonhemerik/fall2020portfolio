@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Roboto&family=Sanchez&display=swap');
 
 body, html {
   height: 100%;
@@ -20,15 +20,14 @@ body, html {
   border-bottom: 3px solid #000;
   z-index: 1;
 }
-nav {
+nav ul {
   text-align: center;
   margin: 1% 0%;
 }
-nav li {
+nav ul li {
   list-style: none;
-  margin-top: 10px;
-  font-family: 'Bevan', cursive;
-  font-size: 1.5em;
+  margin-top: 3px;
+  font-size: 0.80em;
 }
 .nav-link {
   text-decoration: none;
@@ -62,16 +61,20 @@ nav li {
     padding-top: 65vh;
     padding-left: 50%;
   }
-  h1, h3, h4 {
+  .hero-text {
     color: #f2f3f4;
     font-family: 'Bevan', cursive;
+  }
+  h3 {
+    color: #f2f3f4;
+    font-family: 'Sanchez', serif;
   }
 
   /* Projects */
   section {
     background-color: #7aa4a3;
     padding: 30px 0%;
-    margin: 100px 2%;
+    margin: 100px 3%;
     border-radius: 10px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
@@ -81,8 +84,8 @@ nav li {
   }
   .section-title {
     text-align: center;
-    font-size: 3em;
-    font-family: 'Bevan', cursive;
+    font-size: 3.3em;
+    font-family: 'Sanchez', serif;
     transform: translateY(-80px);
   }
   #cosw200-container {
@@ -113,7 +116,7 @@ nav li {
     width: 100%;
   }
   .image-tile:hover {
-    border: 5px solid #ebd993;
+    border: 3px solid #ebd993;
   }
   .tools {
     display: flex;
@@ -153,14 +156,13 @@ nav li {
     text-align: center;
     color: #000;
     font-size: 2em;
-    transform: translateY(-42px);
+    transform: translateY(-40px);
   }
   .reflection p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .reflection a {
     font-size: 1.2em;
-    color:#2f504f;
     text-decoration: none;
     color: #a64153;
   }
@@ -174,17 +176,17 @@ nav li {
     justify-content: flex-end;
   }
   #about-text {
-    flex-basis: 45%;
+    flex-basis: 50%;
     background-color: #ebd993;
-    margin-top: 20vh;
-    margin-right: 75px;
-    padding: 10px;
+    margin-top: 5vh;
+    margin-right: 5px;
+    padding: 5px;
     font-size: .95em;
     border-radius: 5px;
   }
   #about-shortcut {
     text-align: center;
-    font-family: 'Bevan', cursive;
+    font-family: 'Sanchez', serif;
     font-size: 3em;
   }
   #about-text b {
@@ -192,7 +194,7 @@ nav li {
     color: #358540;
   }
   #about-text p {
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 10px 10px;
   }
 
@@ -201,13 +203,13 @@ nav li {
     background-color: #7aa4a3;
     padding: 2% 0;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 0.8em;
   }
   footer h2 {
     margin-bottom: 10px;
   }
   #contact-shortcut {
-    font-family: 'Bevan', cursive;
+    font-family: 'Sanchez', serif;
   }
   footer a {
     color: #ebd993;
@@ -217,7 +219,7 @@ nav li {
     text-decoration: underline;
   }
   .profile-icon {
-    width: 100px;
+    width: 50px;
     margin: 0 20px;
   }
   .profile-icon:hover {
@@ -232,7 +234,7 @@ nav li {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 200px; /* Location of the box */
+    padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -254,48 +256,43 @@ nav li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
   }
   .modal-text {
-    flex-basis: 25%;
-    display: grid;
-    grid-template-columns: auto;
-    justify-items: center;
-    grid-template-rows: 20% 55% 25%;
-    row-gap: 3%;
-    grid-template-areas:
-      "title"
-      "info"
-      "btn";
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
   }
   .modal-title {
-    grid-area: title;
-    font-size: 1.5em;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Sanchez', serif;
   }
   .content {
-    grid-area: info;
-    font-size: 1.4em;
+    margin: 20px 0;
+    font-size: 1.1em;
   }
   .btn {
-    grid-area: btn;
+    text-align: center;
   }
   .btn-box {
-    padding: 20px;
-    font-size: 1.5em;
+    padding: 15px;
+    font-size: 1.4em;
     cursor: pointer;
     background-color: #68ba73;
   }
   .btn-box:hover {
-    background-color: #b2dab7;
+    background-color: #07f126;
   }
   .image-modal {
-    flex-basis: 65%;
-    width: 65%;
+    flex-basis: 60%;
+    width: 60%;
     margin: 0;
     padding: 0;
   }
   iframe {
-    flex-basis: 65%;
-    width: 65%;
+    flex-basis: 60%;
+    width: 60%;
   }
   
   /* The Close Button */
@@ -311,7 +308,7 @@ nav li {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid #68ba73;
+    border: 2px solid #a64153;
   }
 
 
@@ -319,12 +316,13 @@ nav li {
 
   /* Media Queries */
   @media only screen and (min-width: 800px) {
-    nav {
+    nav ul {
       display: flex;
       justify-content: space-evenly;
     }
-    nav li {
+    nav ul li {
       margin-top: 0;
+      font-size: 1.3em;
     }
     #hero-text {
       padding-top: 25%;
@@ -336,7 +334,7 @@ nav li {
     }
     .section-title {
       font-size: 4em;
-      transform: translateY(-95px);
+      transform: translateY(-90px);
     }
     .project-tile {
       flex-basis: 48%;
@@ -350,8 +348,13 @@ nav li {
       margin: 0 5%;
     }
     #about-text {
-      margin-top: 40vh;
-      font-size: 1.2em;
+      font-size: 1.15em;
+    }
+    footer {
+      font-size: 1.5em;
+    }
+    .profile-icon {
+      width: 100px;
     }
   }
   
@@ -361,13 +364,13 @@ nav li {
     }
     .section-title {
       font-size: 5em;
-      transform: translateY(-115px);
+      transform: translateY(-105px);
     }
     .project-tile {
         flex-basis: 31.33%;
     }
     #about-text {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
 
@@ -380,5 +383,16 @@ nav li {
     }
     .project-tile {
         flex-basis: 31.33%;
+    }
+  }
+
+  @media only screen and (min-height: 1000px) {
+    #about-text {
+      flex-basis: 50%;
+      margin-top: 25vh;
+      margin-right: 20px;
+    }
+    #about-text {
+      font-size: 1.3em;
     }
   }
